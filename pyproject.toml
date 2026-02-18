@@ -1,0 +1,21 @@
+[project]
+name = "rl-forge"
+version = "0.1.0"
+description = "Backend platform for managing reinforcement learning training runs"
+requires-python = ">=3.10"
+
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.29.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "httpx>=0.27.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
